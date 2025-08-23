@@ -1,0 +1,104 @@
+[
+  {
+    "video": "/videos/techinfo.mp4",
+    "tools": ["Swift", "Firebase", "Apple Maps", "CoreLocation"],
+    "title": "VibeOut",
+    "url": "https://www.youtube.com/watch?v=zgx7gy2OTII"
+  },
+  {
+    "video": "/videos/bhome.mp4",
+    "tools": ["Next JS", "ReduxToolkit"],
+    "title": "Buy-Home",
+    "url": "https://b-home.vercel.app"
+  },
+  {
+    "video": "/videos/ecommerce.mp4",
+    "tools": ["Next JS", "ReduxToolkit"],
+    "title": "E-commerce Website",
+    "url": "https://b-store.vercel.app"
+  },
+  {
+    "video": "/videos/techinfo.mp4",
+    "tools": ["Next JS", "Mongodb", "Tailwind CSS"],
+    "title": "TechInfo",
+    "url": "https://biraj-techinfo.vercel.app"
+  },
+  {
+    "video": "/videos/d-shop.mp4",
+    "tools": ["Ethereum", "React JS", "Solidity", "Hardhat"],
+    "title": "Decentralize-Shop",
+    "url": "https://decentralize-shop.vercel.app/"
+  },
+  {
+    "video": "/videos/d-chat.mp4",
+    "tools": ["Ethereum", "React JS", "Solidity", "Hardhat"],
+    "title": "D-Chat",
+    "url": "https://dc-chat.vercel.app/"
+  },
+  {
+    "video": "/videos/vr.mp4",
+    "tools": ["HTML", "CSS", "JS", "GSAP"],
+    "title": "Virtual Reality Website",
+    "url": "https://birajtask.netlify.app"
+  },
+  {
+    "video": "/videos/todolist.mp4",
+    "tools": ["Next JS", "Mongodb", "Tailwind CSS"],
+    "title": "Fullstack To-Do-List",
+    "url": "https://github.com/birajlamichhane75/Todo-list-Next-js"
+  },
+  {
+    "video": "/videos/fb.mp4",
+    "tools": ["Next JS"],
+    "title": "Facebook Clone",
+    "url": "https://github.com/birajlamichhane75/Next-js"
+  },
+  {
+    "video": "/videos/video1.mp4",
+    "tools": ["HTML", "CSS", "JavaScript", "GSAP"],
+    "title": "Animated Landing Page",
+    "url": "https://github.com/birajlamichhane75/animated-website-features/tree/main/modern_webdesign1"
+  },
+  {
+    "video": "/videos/video2.mp4",
+    "tools": ["HTML", "CSS", "JavaScript", "GSAP"],
+    "title": "Photo Jumping Effect",
+    "url": "https://github.com/birajlamichhane75/animated-website-features/tree/main/photo_jump_effect"
+  },
+  {
+    "video": "/videos/video3.mp4",
+    "tools": ["HTML", "CSS", "JavaScript", "GSAP"],
+    "title": "ScrollTrigger Animation",
+    "url": "https://github.com/birajlamichhane75/animated-website-features/tree/main/feature4"
+  },
+  {
+    "video": "/videos/video4.mp4",
+    "tools": ["HTML", "CSS", "JavaScript"],
+    "title": "Instagram Clone",
+    "url": "https://github.com/birajlamichhane75/JavaScript_projects/tree/main/instagram"
+  },
+  {
+    "video": "/videos/video5.mp4",
+    "tools": ["HTML", "CSS", "JavaScript", "GSAP"],
+    "title": "Image Scroller",
+    "url": "https://github.com/birajlamichhane75/animated-website-features/tree/main/feature5"
+  },
+  {
+    "video": "/videos/video6.mp4",
+    "tools": ["HTML", "CSS", "JavaScript", "GSAP"],
+    "title": "Animated Landing Page",
+    "url": "https://github.com/birajlamichhane75/animated-landing-page/tree/main/landing_page3"
+  },
+  {
+    "video": "/videos/video7.mp4",
+    "tools": ["HTML", "CSS", "JavaScript", "GSAP"],
+    "title": "Animated Landing Page",
+    "url": "https://github.com/birajlamichhane75/animated-landing-page/tree/main/landing_page1"
+  },
+  {
+    "video": "/videos/video8.mp4",
+    "tools": ["HTML", "CSS", "JavaScript", "GSAP"],
+    "title": "Animated Landing Page",
+    "url": "https://github.com/birajlamichhane75/animated-website-features/tree/main/feature2"
+  }
+]
