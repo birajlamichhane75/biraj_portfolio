@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <>
-      {/* Mobile top bar with hamburger */}
+      {/* Mobile top bar */}
       <div className="md:hidden flex items-center justify-between bg-gray-900 text-white p-4 fixed top-0 left-0 right-0 z-50">
         <h1 className="text-lg font-bold">Biraj</h1>
         <button onClick={() => setIsOpen(!isOpen)}>
@@ -19,23 +19,21 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile overlay with blur */}
+      {/* Mobile overlay */}
       {isOpen && (
         <div
           className="fixed inset-0 bg-black/40 backdrop-blur-sm z-30 md:hidden"
           onClick={() => setIsOpen(false)}
-        ></div>
+        />
       )}
 
       {/* Sidebar */}
       <div
-        className={`fixed inset-0 flex justify-start items-center transform z-40 transition-transform duration-300 ease-in-out ${
-          isOpen ? "translate-x-0" : "-translate-x-full"
-        } md:translate-x-0`}
+        className={`fixed left-0 top-1/2 transform -translate-y-1/2 flex justify-start items-center h-[80%] transition-transform duration-300 ease-in-out z-40
+    ${isOpen ? "translate-x-0" : "-translate-x-full"} md:translate-x-0`}
       >
-        {/* Inner rounded box */}
-        <div className="flex flex-col items-center shadow-lg shadow-black bg-gray-800 h-[80%] mx-4 md:mx-10 md:ml-16 rounded-4xl w-64 p-6">
-          {/* Top profile */}
+        <div className="flex flex-col items-center shadow-lg shadow-black bg-gray-800 h-full md:h-full mx-4 md:mx-10 md:ml-16 rounded-4xl w-64 p-6">
+          {/* Profile */}
           <div className="flex flex-col items-center mt-5 md:mt-0">
             <div className="w-28 h-28 rounded-full overflow-hidden mb-4 border-2 border-gray-600">
               <Image
@@ -49,7 +47,7 @@ const Navbar = () => {
             <h1 className="text-xl font-bold text-center">Biraj Lamichhane</h1>
           </div>
 
-          {/* Navigation links */}
+          {/* Navigation */}
           <div className="mt-10 w-full">
             <ul className="flex flex-col gap-4">
               {["Home", "Projects", "Contact", "About"].map((item) => (
