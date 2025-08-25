@@ -3,7 +3,6 @@
 import Navbar from "../../components/Navbar";
 import Wrapper from "../../components/Wrapper";
 import { useEffect, useState } from "react";
-import { ExternalLink } from "lucide-react";
 import Link from "next/link";
 
 const ProjectPage = () => {
@@ -30,50 +29,48 @@ const ProjectPage = () => {
           {/* Project Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8">
             {projects.map((project, i) => (
-              <div
+              <Link
                 key={i}
-                className="bg-gray-800 rounded-2xl shadow-black shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-1 hover:scale-105 flex flex-col overflow-hidden h-[24rem]"
+                href={project.url}
+                target="_blank"
+                className="group"
               >
-                {/* Video (65% height) */}
-                <div className="relative h-[65%] w-full">
-                  <video
-                    src={project.video}
-                    muted
-                    loop
-                    playsInline
-                    preload="metadata"
-                    className="w-full h-full object-cover"
-                    onMouseOver={(e) => e.currentTarget.play()}
-                    onMouseOut={(e) => e.currentTarget.pause()}
-                  />
-                </div>
-
-                {/* Project Details */}
-                <div className="flex-1 flex flex-col justify-between p-4">
-                  <h2 className="text-lg font-bold mb-2">{project.title}</h2>
-
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {project.tools.map((tool: string, idx: number) => (
-                      <span
-                        key={idx}
-                        className="bg-blue-600/80 text-xs px-2 py-1 rounded"
-                      >
-                        {tool}
-                      </span>
-                    ))}
+                <div className="bg-gray-800 rounded-2xl shadow-black shadow-lg hover:shadow-xl transition-transform transform group-hover:-translate-y-1 group-hover:scale-105 flex flex-col overflow-hidden h-[24rem]">
+                  {/* Video (65% height) */}
+                  <div className="relative h-[65%] w-full">
+                    <video
+                      src={project.video}
+                      muted
+                      loop
+                      playsInline
+                      preload="metadata"
+                      className="w-full h-full object-cover"
+                      onMouseOver={(e) => e.currentTarget.play()}
+                      onMouseOut={(e) => e.currentTarget.pause()}
+                    />
                   </div>
 
-                  <div className="text-right mt-auto">
-                    <Link
-                      href={project.url}
-                      target="_blank"
-                      className="flex items-center gap-1 underline text-gray-400 hover:text-blue-500 font-semibold transition"
-                    >
-                      Live <ExternalLink size={16} />
-                    </Link>
+                  {/* Project Details */}
+                  <div className="flex-1 flex flex-col justify-between p-4">
+                    <h2 className="text-lg font-bold mb-2">{project.title}</h2>
+
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      {project.tools.map((tool: string, idx: number) => (
+                        <span
+                          key={idx}
+                          className="bg-blue-600/80 text-xs px-2 py-1 rounded"
+                        >
+                          {tool}
+                        </span>
+                      ))}
+                    </div>
+
+                    <p className="text-gray-400 text-sm group-hover:text-blue-400 transition underline">
+                      Live
+                    </p>
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </Wrapper>

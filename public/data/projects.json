@@ -1,5 +1,11 @@
 [
   {
+    "video": "/videos/nsbeweb_vidoe.mp4",
+    "tools": ["Next JS", "TypeScript", "Tailwind CSS", "Firebase"],
+    "title": "HTU-NSBE Official Website",
+    "url": "https://github.com/birajlamichhane75/nsbe-web"
+  },
+  {
     "video": "/videos/techinfo.mp4",
     "tools": ["Swift", "Firebase", "Apple Maps", "CoreLocation"],
     "title": "VibeOut",
@@ -10,6 +16,12 @@
     "tools": ["Next JS", "ReduxToolkit"],
     "title": "Buy-Home",
     "url": "https://b-home.vercel.app"
+  },
+  {
+    "video": "/videos/vr.mp4",
+    "tools": ["Next JS", "TypeScript","GSAP"],
+    "title": "Virtual Reality Website",
+    "url": "https://birajtask.netlify.app"
   },
   {
     "video": "/videos/ecommerce.mp4",
@@ -35,12 +47,7 @@
     "title": "D-Chat",
     "url": "https://dc-chat.vercel.app/"
   },
-  {
-    "video": "/videos/vr.mp4",
-    "tools": ["HTML", "CSS", "JS", "GSAP"],
-    "title": "Virtual Reality Website",
-    "url": "https://birajtask.netlify.app"
-  },
+  
   {
     "video": "/videos/todolist.mp4",
     "tools": ["Next JS", "Mongodb", "Tailwind CSS"],

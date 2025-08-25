@@ -35,7 +35,7 @@ const ExperienceSection = () => {
 
                 {/* Extracurricular / Leadership */}
                 <div className="bg-gray-800 rounded-xl p-6 shadow-md shadow-black flex flex-col items-center justify-center h-full transition hover:scale-105 hover:shadow-xl">
-                    <span className="text-3xl font-bold text-white">NSBE / Clubs</span>
+                    <span className="text-3xl font-bold text-white">Clubs</span>
                     <p className="text-blue-400 font-semibold mt-1">Leadership & Membership</p>
                     <p className="text-gray-400 text-sm mt-2 text-center">
                         Program Chair at NSBE, Member of Apple Coding Club – actively engaging in tech communities.

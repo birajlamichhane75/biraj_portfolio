@@ -21,11 +21,7 @@ const ExtracurricularSection = () => {
             Member – Apple Coding Club
           </span>
         </li>
-        <li>
-          <span className="font-semibold text-white">
-            Member – Scout (Student Org)
-          </span>
-        </li>
+        
       </ul>
     </div>
   );

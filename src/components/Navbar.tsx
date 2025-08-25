@@ -50,7 +50,7 @@ const Navbar = () => {
           {/* Navigation */}
           <div className="mt-10 w-full">
             <ul className="flex flex-col gap-4">
-              {["Home", "Projects", "Contact", "About"].map((item) => (
+              {["Home", "Projects", "About", "Contact"].map((item) => (
                 <li key={item}>
                   <Link
                     href={`/${item === "Home" ? "" : item.toLowerCase()}`}
