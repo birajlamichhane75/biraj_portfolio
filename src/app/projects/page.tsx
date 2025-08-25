@@ -67,6 +67,7 @@ const ProjectPage = () => {
 
                     <p className="text-gray-400 text-sm group-hover:text-blue-400 transition underline">
                       Live
+                      
                     </p>
                   </div>
                 </div>

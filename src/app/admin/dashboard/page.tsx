@@ -5,6 +5,7 @@ import React, { useState, useEffect } from "react";
 import { collection, addDoc, getDocs, deleteDoc, doc } from "firebase/firestore";
 import { db } from "../../../lib/firebase";
 import axios from "axios";
+import Image from "next/image";
 
 
 type Project = {
@@ -156,7 +157,7 @@ const AdminDashboard = () => {
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map(project => (
           <div key={project.id} className="bg-white p-4 rounded shadow relative">
-            <img src={project.imageURL} alt={project.title} className="h-40 w-full object-cover rounded mb-2" />
+            <Image src={project.imageURL} alt={project.title} className="h-40 w-full object-cover rounded mb-2" />
             <h3 className="font-semibold text-lg">{project.title}</h3>
             <p className="text-gray-600 text-sm mb-2">{project.description}</p>
             <div className="flex flex-wrap gap-1 mb-2">
