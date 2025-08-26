@@ -38,16 +38,15 @@ const ProjectPage = () => {
                 <div className="bg-gray-800 rounded-2xl shadow-black shadow-lg hover:shadow-xl transition-transform transform group-hover:-translate-y-1 group-hover:scale-105 flex flex-col overflow-hidden h-[24rem]">
                   {/* Video (65% height) */}
                   <div className="relative h-[65%] w-full">
-                    <video
-                      src={project.video}
-                      muted
-                      loop
-                      playsInline
-                      preload="metadata"
-                      className="w-full h-full object-cover"
-                      onMouseOver={(e) => e.currentTarget.play()}
-                      onMouseOut={(e) => e.currentTarget.pause()}
-                    />
+                      <video
+                        src={project.video}
+                        muted
+                        loop
+                        autoPlay
+                        playsInline
+                        preload="metadata"
+                        className="w-full h-full object-cover"
+                      />
                   </div>
 
                   {/* Project Details */}
@@ -67,7 +66,7 @@ const ProjectPage = () => {
 
                     <p className="text-gray-400 text-sm group-hover:text-blue-400 transition underline">
                       Live
-                      
+
                     </p>
                   </div>
                 </div>

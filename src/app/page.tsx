@@ -14,7 +14,7 @@ const HomePage = () => {
     <div className="bg-gray-900 text-white min-h-screen">
       <Navbar />
 
-      <div className="md:ml-80 pt-24 p-4 md:p-16 md:px-10">
+      <div className="pt-16 xl:ml-64 px-4">
         <Wrapper>
           {/* Hero Section */}
           <HeroSection />
