@@ -4,6 +4,7 @@ import Navbar from "../../components/Navbar";
 import Wrapper from "../../components/Wrapper";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { ExternalLink, ExternalLinkIcon } from "lucide-react";
 
 const ProjectPage = () => {
   const [projects, setProjects] = useState<any[]>([]);
@@ -19,7 +20,7 @@ const ProjectPage = () => {
       <Navbar />
 
       {/* Main content wrapper */}
-      <div className="md:ml-96 pt-24 p-4 md:p-16">
+      <div className="pt-16 xl:ml-64 px-4">
         <Wrapper>
           <div className="text-center py-10">
             <h1 className="text-4xl font-bold mb-2">All Projects</h1>
@@ -38,37 +39,47 @@ const ProjectPage = () => {
                 <div className="bg-gray-800 rounded-2xl shadow-black shadow-lg hover:shadow-xl transition-transform transform group-hover:-translate-y-1 group-hover:scale-105 flex flex-col overflow-hidden h-[24rem]">
                   {/* Video (65% height) */}
                   <div className="relative h-[65%] w-full">
-                      <video
-                        src={project.video}
-                        muted
-                        loop
-                        autoPlay
-                        playsInline
-                        preload="metadata"
-                        className="w-full h-full object-cover"
-                      />
+                    <video
+                      src={project.video}
+                      muted
+                      loop
+                      autoPlay
+                      playsInline
+                      preload="metadata"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
 
                   {/* Project Details */}
-                  <div className="flex-1 flex flex-col justify-between p-4">
-                    <h2 className="text-lg font-bold mb-2">{project.title}</h2>
+                  {/* Project Details */}
+                  <div className="flex-1 flex flex-row justify-between p-4 gap-5">
+                    <div>
+                      <h2 className="text-lg font-bold mb-2">{project.title}</h2>
 
-                    <div className="flex flex-wrap gap-2 mb-4">
-                      {project.tools.map((tool: string, idx: number) => (
-                        <span
-                          key={idx}
-                          className="bg-blue-600/80 text-xs px-2 py-1 rounded"
-                        >
-                          {tool}
-                        </span>
-                      ))}
+                      <div className="flex flex-wrap gap-2 mb-4">
+                        {project.tools.map((tool: string, idx: number) => (
+                          <span
+                            key={idx}
+                            className="bg-blue-600/80 text-xs px-2 py-1 rounded"
+                          >
+                            {tool}
+                          </span>
+                        ))}
+                      </div>
                     </div>
 
-                    <p className="text-gray-400 text-sm group-hover:text-blue-400 transition underline">
-                      Live
-
-                    </p>
+                    <div className="flex justify-end items-center gap-1">
+                      <Link
+                        href={project.url}
+                        target="_blank"
+                        className="font-semibold text-white underline flex items-center gap-1"
+                      >
+                        Live <ExternalLink size={16} />
+                      </Link>
+                    </div>
                   </div>
+
+
                 </div>
               </Link>
             ))}
