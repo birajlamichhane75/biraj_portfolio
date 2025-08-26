@@ -16,9 +16,15 @@ const ExtracurricularSection = () => {
             Program Chair – National Society of Black Engineers (NSBE)
           </span>
         </li>
+        
         <li>
           <span className="font-semibold text-white">
             Member – Apple Coding Club
+          </span>
+        </li>
+        <li>
+          <span className="font-semibold text-white">
+            Planning and Development – Math Club (Huston-Tillotson University)
           </span>
         </li>
         

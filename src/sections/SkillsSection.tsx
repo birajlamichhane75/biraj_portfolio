@@ -34,6 +34,7 @@ const SkillsSection = () => {
           </h3>
           <ul className="space-y-1 text-gray-300 list-disc pl-5 marker:text-yellow-400">
             <li>Node.js / Express</li>
+            <li>Python</li>
             <li>MongoDB</li>
             <li>Solidity (Smart Contracts)</li>
             <li>REST APIs</li>

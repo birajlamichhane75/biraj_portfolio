@@ -25,10 +25,12 @@ const HeroSection = () => {
 
       {/* Call-to-action */}
       <Link
-        href="#contact"
+        href="https://www.linkedin.com/in/biraj-lamichhane-746754277/"
+        target="_blank"
+        rel="noopener noreferrer"
         className="text-blue-500 font-semibold mt-4 md:mt-0 hover:underline"
       >
-        Connect with Me
+        LinkedIn
       </Link>
     </div>
   );

@@ -2,6 +2,8 @@
 
 import Navbar from "../../components/Navbar";
 import Wrapper from "../../components/Wrapper";
+import SkillsSection from "../../sections/SkillsSection";
+import ExperienceSection from "../../sections/ExperienceSection";
 
 const AboutPage = () => {
   return (
@@ -9,7 +11,7 @@ const AboutPage = () => {
       <Navbar />
 
       {/* Main content */}
-      <div className="md:ml-96 pt-24 p-4 md:p-16">
+      <div className="pt-16 xl:ml-64 px-4">
         <Wrapper>
           <div className="text-center py-10">
             <h1 className="text-4xl font-bold mb-2">About Me</h1>
@@ -22,7 +24,7 @@ const AboutPage = () => {
             <p className="mb-6">
               Hi, I’m <span className="text-blue-400 font-semibold">Biraj Lamichhane</span>, 
               a Computer Science student at Huston-Tillotson University. I am passionate
-              about building scalable software, web applications, and blockchain solutions. 
+              about building scalable software, web applications, and mobile applications. 
             </p>
             <p className="mb-6">
               My technical toolkit includes{" "}
@@ -36,6 +38,14 @@ const AboutPage = () => {
               where I collaborate with peers and learn through team projects and hackathons.
             </p>
           </div>
+
+          {/* Skills Section */}
+          <div className="mt-16">
+            <SkillsSection />
+          </div>
+
+          
+
         </Wrapper>
       </div>
     </div>
